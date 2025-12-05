@@ -1,18 +1,20 @@
 # pfm_viewer
-A simple opencv programm to view pfm files. For PFM files, we typically want to normalize the data for visualization. Usage ./pfm_viewer /path/to/your/image.pfm
-
+A simple opencv programm to view pfm files. For PFM files, we typically want to normalize the data for visualization. Usage 
+```
+./pfm_viewer /path/to/your/image.pfm
+```
 To compile this program, you'll need to have OpenCV installed and link against it. Here's how to compile it:
-
+```
 g++ -std=c++11 pfm_viewer.cpp -o pfm_viewer `pkg-config --cflags --libs opencv4`
-
+```
 Or if you're using OpenCV 3.x:
-
+```
 g++ -std=c++11 pfm_viewer.cpp -o pfm_viewer `pkg-config --cflags --libs opencv`
-
+```
 If you don't have pkg-config set up, you might need to use:
-
+```
 g++ -std=c++11 pfm_viewer.cpp -o pfm_viewer -I/usr/include/opencv4 -lopencv_core -lopencv_highgui -lopencv_imgcodecs
-
+```
 
 Features of this program:
 Command-line argument handling: Takes the PFM file path as a command-line argument
