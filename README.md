@@ -1,5 +1,15 @@
 # pfm_viewer
-A simple opencv programm to view pfm files. For PFM files, we typically want to normalize the data for visualization. Usage 
+A simple opencv programm to view pfm files. For PFM files, we typically want to normalize the data for visualization.
+```
+The program will:
+Load the PFM file
+Display basic information about the image
+Show the image in a window
+Wait for a keypress before closing
+Handle both grayscale and color PFM files appropriately
+```
+
+Usage 
 ```
 ./pfm_viewer /path/to/your/image.pfm
 ```
@@ -23,14 +33,6 @@ Proper PFM handling: Uses OpenCV's imread with IMREAD_UNCHANGED flag to preserve
 Display normalization: Normalizes the image data to 0-255 range for proper visualization
 Flexible display: Handles both single-channel (grayscale) and multi-channel images
 User-friendly interface: Shows image information and waits for user input
-Usage example:
-bash
 
-./pfm_viewer /path/to/your/image.pfm
 Note: OpenCV supports PFM format through its image I/O capabilities, but make sure your OpenCV installation includes support for PFM files. If you encounter issues with PFM loading, you might need to ensure you're using a recent version of OpenCV (4.5+) or consider implementing custom PFM reading logic.
-The program will:
-Load the PFM file
-Display basic information about the image
-Show the image in a window
-Wait for a keypress before closing
-Handle both grayscale and color PFM files appropriately
+
