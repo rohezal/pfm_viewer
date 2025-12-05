@@ -1,5 +1,5 @@
 # pfm_viewer
-For PFM files, we typically want to normalize the data for visualization. Usage ./pfm_viewer /path/to/your/image.pfm
+A simple opencv programm to view pfm files. For PFM files, we typically want to normalize the data for visualization. Usage ./pfm_viewer /path/to/your/image.pfm
 
 To compile this program, you'll need to have OpenCV installed and link against it. Here's how to compile it:
 bash
